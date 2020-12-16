@@ -39,11 +39,17 @@ public class DonesiHomePage extends BaseHelper
         dropDownList.click();
     }
 
+    private void clickOnOrderButton()
+    {
+        orderButton.click();
+    }
+
     public void donesiRestaurantsResults(String url, String text)
     {
         navigateToDonesi(url);
         insertTextInsideSearchBox(text);
         chooseAddressFromDropDown();
+        clickOnOrderButton();
     }
 
 
