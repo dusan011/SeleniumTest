@@ -44,12 +44,20 @@ public class DonesiHomePage extends BaseHelper
         orderButton.click();
     }
 
+    private void clickOnContinueButton()
+    {
+        wdWait.until(ExpectedConditions.presenceOfElementLocated(By.className("button-map-submit")));
+        WebElement continueButton = driver.findElement(By.className("button-map-submit"));
+        continueButton.click();
+    }
+
     public void donesiRestaurantsResults(String url, String text)
     {
         navigateToDonesi(url);
         insertTextInsideSearchBox(text);
         chooseAddressFromDropDown();
         clickOnOrderButton();
+        clickOnContinueButton();
     }
 
 
