@@ -34,8 +34,8 @@ public class DonesiHomePage extends BaseHelper
 
     private void chooseAddressFromDropDown()
     {
-        wdWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\'address-form-component\']/div[2]/div[1]/ul/li[1]/span[3]/span[2]")));
-        WebElement dropDownList = driver.findElement(By.xpath("//*[@id=\'address-form-component\']/div[2]/div[1]/ul/li[1]/span[3]/span[2]"));
+        wdWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"address-form-component\"]/div[2]/div[1]/ul/li[1]/span[3]/span[2]")));
+        WebElement dropDownList = driver.findElement(By.xpath("//*[@id=\"address-form-component\"]/div[2]/div[1]/ul/li[1]/span[3]/span[2]"));
         dropDownList.click();
     }
 
